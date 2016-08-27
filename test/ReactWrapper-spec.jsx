@@ -929,8 +929,9 @@ describeWithDOM('mount', () => {
       }
 
       const similarException = ((() => {
+        const user = {};
         try {
-          return undefined.givenName;
+          return user.name.givenName;
         } catch (e) {
           return e;
         }
@@ -996,8 +997,9 @@ describeWithDOM('mount', () => {
         };
 
         const similarException = ((() => {
+          const user = {};
           try {
-            return undefined.givenName;
+            return user.name.givenName;
           } catch (e) {
             return e;
           }
