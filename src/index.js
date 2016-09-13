@@ -5,10 +5,12 @@ import mount from './mount';
 import shallow from './shallow';
 import render from './render';
 
-export {
+window.enzyme = {
   render,
   shallow,
   mount,
   ShallowWrapper,
   ReactWrapper,
-};
+}
+
+export default enzyme;
